@@ -1,0 +1,27 @@
+@keyframes gradientFloat {
+  0%, 100% {
+    background-size: 100% 100%;
+    background-position: 0% 0%;
+    opacity: 0.95;
+  }
+  50% {
+    background-size: 150% 150%;
+    background-position: 25% 25%;
+    opacity: 1;
+  }
+}
+
+.bg-gradient-radial-animated-red {
+  background: radial-gradient(circle at bottom left, #FF9B9B 0%, #FF5252 25%, #DC2626 50%, #EF4444 100%);
+  animation: gradientFloat 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.bg-gradient-radial-animated-yellow {
+  background: radial-gradient(circle at bottom left, #FDE68A 0%, #FCD34D 25%, #F59E0B 50%, #FBBF24 100%);
+  animation: gradientFloat 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.bg-gradient-radial-animated-green {
+  background: radial-gradient(circle at bottom left, #B3F88A 0%, #90E54A 25%, #44BF1F 50%, #86D472 100%);
+  animation: gradientFloat 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+} 
